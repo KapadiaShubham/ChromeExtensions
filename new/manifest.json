@@ -1,0 +1,15 @@
+{
+    "name": "NEW",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "My first extension",
+    "browser_action": {
+        "default_popup": "mine.html",
+        "default_icon": "logo.png"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "notifications"
+    ]
+}

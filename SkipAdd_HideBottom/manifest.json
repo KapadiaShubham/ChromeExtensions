@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Skip Ad & Hide Bottom",
+    "description": "Youtube Ad Skip",
+    "version": "1.0",
+    "content_scripts": [{
+        "js": [
+            "skipAd_hideBottom.js"
+        ],
+        "css": [
+            "hide_bottom.css"
+        ],
+        "run_at": "document_idle",
+        "matches": [
+            "*://www.youtube.com/*"
+        ]
+    }],
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ]
+}

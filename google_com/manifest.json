@@ -1,0 +1,22 @@
+{
+    "name": "My google search",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description": "My first extension",
+    "action": {},
+    "content_scripts": [{
+        "js": [
+            "init.js"
+        ],
+        "css": [
+            "styles.css"
+        ],
+        "matches": [
+            "*://www.google.com/*"
+        ]
+    }],
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ]
+}
